@@ -1,24 +1,29 @@
-preparation(); 
+var taches=document.querySelector('#principale');
+preparation(taches); 
 
 
 var ajout=document.querySelector('.ajout');
 var ok=document.querySelector('.ok');
 var checkall=document.querySelector('.checkall');
-var vider=document.querySelector('.vider');
-var btsup=document.querySelectorAll('.btSup');
+var uncheckall=document.querySelector('.uncheckall');
+var vider=document.querySelector('.vider'); 
+var btsups=document.querySelectorAll('.btSup'); 
+var checks=document.querySelectorAll('input');
 
 ajout.addEventListener('click', function(){ ajouter(); }, false);
 ok.addEventListener('click', function() { enregistrer(); }, false);
 checkall.addEventListener('click', function() { checkalls(); }, false);
+uncheckall.addEventListener('click', function() { uncheckalls(); }, false);
 vider.addEventListener('click', function() { clear(); }, false);
-
-for(i=0; i<btsup.length; i++){
+for(var i=0; i<btsups.length; i++){
     
-    btsup[0].addEventListener('click', function (e) { alert(e.target.name); }, false);
+    btsups[i].addEventListener('click', function (e) { supprimerTache(e.target.name) });
 }
-alert(btsup[0]);
 
-/*for(i=0; i<btsup.length; i++){
-    
-    btsup[0].addEventListener('click', function (e) { supprimerTache(e.target.name) });
-}*/
+for(var i=0; i<checks.length; i++){
+    if(checks[i].type=="checkbox"){
+        checks[i].addEventListener('click', function (e) { checker(e.target); });
+    }
+}
+
+

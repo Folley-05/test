@@ -36,7 +36,7 @@ bt2.className="btn vider";
 bt3.textContent="check all";
 bt3.className="btn checkall";
 bt4.textContent="uncheck all";
-bt4.className="btn unchekall";
+bt4.className="btn uncheckall";
 navi.appendChild(bt1);
 navi.appendChild(bt2);
 navi.appendChild(bt3);
