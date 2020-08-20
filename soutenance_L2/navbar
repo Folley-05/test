@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta    charset="UTF-8">
+    <meta name="viewport" content="width=device-width, init-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Apprendre DEV</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active">  <a href="index.html">Accueil<span class="sr-only">(current)</span></a> </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">C#</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Framework PHP <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Symfony</a></li>
+                    <li><a href="#">Laravel</a></li>
+                    <li><a href="#">Cakephp</a></li>
+                    <li><a href="#">Yii</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Framework JS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Backbone.js</a></li>
+                    <li><a href="#">AngularJS</a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Meteor</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CMS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Drupal</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                    <li><a href="#">Joomla</a></li>
+                    <li><a href="#">Prestashop</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ERP<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Odoo</a></li>
+                    <li><a href="#">Dolibarr</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logiciel<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Adobe Premier</a></li>
+                    <li><a href="#">Illustrator</a></li>
+                    <li><a href="#">InDesign</a></li>
+                    <li><a href="#">Gimp</a></li>
+                    <li><a href="#">Sublimtext</a></li>
+                    <li><a href="#">Notepad++</a></li>
+                </ul>
+            </li>
+                                                         
+        </ul>
+    </div>    
+</nav>
+ 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

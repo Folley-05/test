@@ -1,0 +1,49 @@
+.texte-center
+{
+    background-color: rgba(254, 170, 0, 0.8);
+    color: white;
+    padding-top: 2rem;
+    size: 1.3em;
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 2%;
+}
+    /* postionement  */
+    #a1{
+        position: absolute;
+        margin-left: -20%;
+    }
+    #a3{
+        position: absolute;
+        left: 48%;
+        top: 52%;
+        margin-top: 1%;
+    }
+    #a4{
+        position: absolute;
+        left: -20%;
+    }
+    #a5{
+        position: absolute;
+        left:48% ;
+    }
+   /*hr .light{
+       border-top: 1px solid #d5d5d5;
+       width: 75%;
+       margin-top: .8rem;
+       margin-bottom: 1rem;
+   }*/
+   
+   footer a{
+       color: #d5d5d5;
+   }
+   hr .light-100{
+       border-top: 1px solid #d5d5d5;
+       width: 100%;
+       margin-top: .8rem;
+       margin-bottom: 1rem;
+   }
+   ul
+   {
+       list-style: none;
+   }

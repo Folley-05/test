@@ -1,0 +1,14 @@
+.container
+{
+    margin: auto;
+}
+
+.bg-info
+{
+    background-color: blue;
+}
+
+.bg-success
+{
+    background-color: green;
+}
