@@ -57,6 +57,10 @@ var bt5=document.createElement('button');
 bt5.textContent="Enregistrer";
 bt5.className="ok";
 popup.appendChild(bt5);
+var bt6=document.createElement('button');
+bt6.textContent="annuler";
+bt6.className='annuler';
+popup.appendChild(bt6);
 
 //integration des autres sripts
 var fonctions=document.createElement('script');

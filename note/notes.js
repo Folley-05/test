@@ -9,12 +9,15 @@ var uncheckall=document.querySelector('.uncheckall');
 var vider=document.querySelector('.vider'); 
 var btsups=document.querySelectorAll('.btSup'); 
 var checks=document.querySelectorAll('input');
+var annuler=document.querySelector('.annuler');
 
 ajout.addEventListener('click', function(){ ajouter(); }, false);
 ok.addEventListener('click', function() { enregistrer(); }, false);
 checkall.addEventListener('click', function() { checkalls(); }, false);
 uncheckall.addEventListener('click', function() { uncheckalls(); }, false);
+annuler.addEventListener('click', function() { annulation();}, false);
 vider.addEventListener('click', function() { clear(); }, false);
+
 for(var i=0; i<btsups.length; i++){
     
     btsups[i].addEventListener('click', function (e) { supprimerTache(e.target.name) });

@@ -28,10 +28,12 @@ function preparation(element)
             bouton.onclick=function(){ supprimerTache(this.name)};
             element.appendChild(tache);
             //contenu des elements
-            checkbox.name=localStorage.key(i)
+            checkbox.name=localStorage.key(i);
+            checkbox.onclick=function(){ checker(this)};
             nom=localStorage.getItem(checkbox.name).split(' ');
             if(nom[1]=='v'){
                 checkbox.checked=true;
+                tache.className='tachev';
             }
             label.textContent=nom[0];
             bouton.name=localStorage.key(i);
@@ -56,6 +58,12 @@ function enregistrer(){
 
 }
 
+function annulation(){
+    body[0].style="";
+    value.value='';
+    taskadd.className="notdisplay";
+}
+
 function supprimerTache(e){
     localStorage.removeItem(e);
     preparation(document.querySelector('#principale'));
@@ -68,32 +76,36 @@ function clear(){
         preparation(document.querySelector('#principale'));
     }
 }
-
 function checkalls() {
-    checks=document.getElementsByTagName('input');
-    for(var box=0; box<checks.length; box++){
-        if(checks[box].type=='checkbox'){
-            checks[box].checked=true;
-        }
+    
+    for(var y=0; y<localStorage.length; y++){
+        var item=localStorage.getItem(localStorage.key(y));
+        var nom=item.split(" ");
+        nom[1]='v';
+        localStorage.setItem(localStorage.key(y), nom[0]+" "+nom[1]);
     }
+    preparation(document.querySelector('#principale'));
 }
 
 function uncheckalls() {
-    checks=document.getElementsByTagName('input');
-    for(var box=0; box<checks.length; box++){
-        if(checks[box].type=='checkbox'){
-            checks[box].checked=false;
-        }
+    for(var y=0; y<localStorage.length; y++){
+        var item=localStorage.getItem(localStorage.key(y));
+        var nom=item.split(" ");
+        nom[1]='f';
+        localStorage.setItem(localStorage.key(y), nom[0]+" "+nom[1]);
     }
+    preparation(document.querySelector('#principale'));
 }
 
 function checker(e){
     nom=localStorage.getItem(e.name).split(' ');
     if(e.checked){
         nom[1]='v';
+        e.parentNode.className='tachev';
     }
     else{
         nom[1]='f'
+        e.parentNode.className='tache';
     }
     localStorage.setItem(e.name, nom[0]+' '+nom[1]);
 }
